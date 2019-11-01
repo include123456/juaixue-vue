@@ -3,6 +3,11 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 
+import VueResource from 'vue-resource'
+
+/*使用VueResource插件*/
+Vue.use(VueResource)
+
 //按钮
 import { Cell, CellGroup,Button } from 'vant';
 Vue.use(Cell).use(CellGroup).use(Button);

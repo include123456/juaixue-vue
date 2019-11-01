@@ -14,17 +14,24 @@
 </template>
 <script>
     export default {
-        data(){
-           return{
-               value:'msg'
-           }
-        },
-        methods:{
-            onSearch() {
-                alert(this.value);
+        data() {
+            return {
+                value: 'msg'
             }
         },
-        name:'IndexPage',
+        methods: {
+            onSearch() {
+                this.$http.get('http://yapi.demo.qunar.com/mock/64532/bbyy_employee/user/aboutAs').then(result=> {
+                    result.toString()
+                    alert(result);
+                }),err=>{
+                    alert(err);
+                }
+
+            }
+
+        },
+        name: 'IndexPage',
         props: {
             msg: String
         }
