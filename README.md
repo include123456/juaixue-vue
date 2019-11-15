@@ -1,4 +1,4 @@
-# juaixue-vue
+# juaixuevue-vue1
 
 ## Project setup
 ```
